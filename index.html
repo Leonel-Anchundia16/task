@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Tareas</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" type="image/png" href="./assets/icon.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="mainCard">
+        <div>
+          <form action="">
+            <div class="icon">
+              <!-- <img src="./assets/rocket.svg" width="35" /> -->
+              <img src="./assets/task-logo.svg" width="50" />
+            </div>
+            <input
+              type="text"
+              name="task"
+              placeholder="Nombre de la tarea"
+              class="inputForm"
+              autocomplete="off"
+              data-form-input
+            />
+            <input
+              type="datetime-local"
+              class="inputDate"
+              data-form-date
+              placeholder="YYYY/MM/DD"
+            />
+            <button type="submit" class="btnCreate" data-form-btn>
+              <i class="fas fa-plus-circle"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="cardsList" data-list></ul>
+      </div>
+    </main>
+
+    <footer>
+      <section class="redes-sociales">
+          <div class="contenedor">
+              <a href="https://www.linkedin.com/in/eddy-espinoza-3a3771263/" class="twitter" ><i class="fab fa-linkedin"></i></a> 
+              <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/eddyespinoza14" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com" class="youtube"><i class="fab fa-youtube"></i></a>
+              <a href="https://github.com/EddyEspinoza123" class="github"><i class="fab fa-github"></i></a>
+          </div>
+          <div class="parrafo-footer">
+              <p>Create By Eddy Espinoza</p>
+          </div>
+      </section>
+  </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
